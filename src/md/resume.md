@@ -61,13 +61,16 @@ category:
 ### 1. OpenAI助手 & OpenAI营销平台
 
 - 项目架构：采用DDD领域驱动设计，将项目分为trigger、app、domain、infrastructure、types模块，domain涵盖了AI服务、账户、认证授权、规则校验、公众号、订单、产品等领域模型
-- 核心技术：SpringBoot、MyBatis、Redis、Guava EventBus、OKHttp3、DashScope(通义千问)大模型、支付宝支付等
+- 核心技术：SpringBoot、MyBatis、Redis、Shiro、JWT、Guava EventBus、OKHttp3、DashScope(通义千问)大模型、支付宝支付等
 - 项目部署：CenterOS7.9、Nginx、Docker、阿里云云效Devops、SpringBootActuator、Prometheus、Grafana、Loki
 - 项目地址：<a href="http://openai.yaofengqiao.top">http://openai.yaofengqiao.top</a>
 - 项目描述：此项目以应用AI为主，通过公众号鉴权、支付宝支付、对接多种AI大模型。提供了AI流式问答服务，为日常开发提效
 - 核心职责：
     - 项目架构搭建，领域模型拆分
+    - Shiro + JWT 实现认证授权
     - 使用SpringMVC ResponseBodyEmitter实现后端接口的流式应答(事件流)
+    - 使用模板方法定义AI问答的统一流程
+    - 自定义一系列规则校验器，在AI问题统一流程中，对调用实际调用AI接口方法做前置、后置的拦截
     - 采用 DDD 架构 API，以及便于不同领域模块的独立设计，一个领域就是一个功能域。在功能域中提供模型、仓储、事件、服务。这样可以更好扩展。
     - 鉴于生成式服务的文本生成可能会有不可靠信息，所以对这部分内容添加了敏感词的过滤。并可根据不同场景选择不同范围的敏感词处理。
     - OpenAI 大模型有多种，这部分在架构上设计独立的 SDK，在实现上采用了 Session 会话模型进行处理，以及通过工厂处理服务。在细节上，采用了
@@ -75,7 +78,7 @@ category:
     - 在整套工程的代码设计实现中，采用了较多抽象的思想和设计模式(模板方法、策略模式、工厂模式等)，来解决各类场景问题。
     - 对接支付宝支付，完成从商品库、下单支付、异步发货、掉单补偿等核心流程实现。让用户可以在线购买AI问答额度。
 
-### 4. 服务治理 SpringBoot 中间件
+### 2. 服务治理 SpringBoot 中间件
 
 - 系统架构：SpringBoot Starter 组件开发
 - 核心技术：熔断、降级、限流、切量、白名单、人群控制
