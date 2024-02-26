@@ -25,7 +25,7 @@ highlights:
       - title: OpenAI助手 & OpenAI营销平台 
         icon: table-columns
         details: 24年1月，以DDD领域驱动设计架构，开发完成AI助手、营销平台系统。运用了全面的分布式技术栈。
-        link: http://openai.yaofengqiao.top:3002/#/chat/0
+        link: http://openai.yaofengqiao.top
   
 
 copyright: false

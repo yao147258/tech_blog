@@ -50,40 +50,45 @@ category:
 - 时间: 2023.08 - 至今
 - 岗位: Java开发工程师
 - 职责【可选】: 负责氧惠APP、团好单、公众号日常版本迭代，线上BUG修复等
-<br/>
-<br/>
+  <br/>
+  <br/>
 - 公司: 威派格智慧水务有限公司
 - 时间: 2021.06 - 2023.07
 - 岗位: Java开发工程师
 - 职责【可选】: 负责水司账务系统日常迭代、线上BUG修复等
 
 ## **项目经验**
+
 ### 1. OpenAI助手 & OpenAI营销平台
 
-- 项目架构：采用DDD领域驱动设计，将项目分为trigger、app、domain、infrastructure、types模块，domain涵盖了AI服务、账户、认证授权、规则校验、公众号、订单、产品等领域模型
+- 项目描述：此项目以应用AI为主，通过公众号鉴权、支付宝支付、对接多种AI大模型。提供了AI流式问答服务，为日常开发提效
+- 项目架构：采用DDD领域驱动设计，将项目分为trigger、app、domain、infrastructure、types模块，涵盖了AI、账户、认证授权、规则校验、公众号、订单、产品等领域模型
 - 核心技术：SpringBoot、MyBatis、Redis、Shiro、JWT、Guava EventBus、OKHttp3、DashScope(通义千问)大模型、支付宝支付等
 - 项目部署：CenterOS7.9、Nginx、Docker、阿里云云效Devops、SpringBootActuator、Prometheus、Grafana、Loki
 - 项目地址：<a href="http://openai.yaofengqiao.top">http://openai.yaofengqiao.top</a>
-- 项目描述：此项目以应用AI为主，通过公众号鉴权、支付宝支付、对接多种AI大模型。提供了AI流式问答服务，为日常开发提效
 - 核心职责：
-    - 项目架构搭建，领域模型拆分
+    - 项目架构搭建，采用DDD设计代码模块，领域模型拆分
     - Shiro + JWT 实现认证授权
     - 使用SpringMVC ResponseBodyEmitter实现后端接口的流式应答(事件流)
-    - 使用模板方法定义AI问答的统一流程
-    - 自定义一系列规则校验器，在AI问题统一流程中，对调用实际调用AI接口方法做前置、后置的拦截
-    - 采用 DDD 架构 API，以及便于不同领域模块的独立设计，一个领域就是一个功能域。在功能域中提供模型、仓储、事件、服务。这样可以更好扩展。
-    - 鉴于生成式服务的文本生成可能会有不可靠信息，所以对这部分内容添加了敏感词的过滤。并可根据不同场景选择不同范围的敏感词处理。
-    - OpenAI 大模型有多种，这部分在架构上设计独立的 SDK，在实现上采用了 Session 会话模型进行处理，以及通过工厂处理服务。在细节上，采用了
+    - 使用模板方法模式定义AI问答的标准流程
+    - 自定义一系列规则校验器，在AI问答标准流程中，对实际调用AI接口方法做前置处理，例如敏感过滤、每分钟调用频率限制、黑名单限制、额度限制等
+    - 对接多ChatGPT、通义千问、ChatGLM(智谱AI)，在对接ChatGLM时设计独立的SDK，在实现上采用了 Session
+      会话模型进行处理，以及通过工厂处理服务。在细节上，采用了
       OKHttp3 框架完成模型对接，这样的方式更好扩展，代码也更易于维护。
     - 在整套工程的代码设计实现中，采用了较多抽象的思想和设计模式(模板方法、策略模式、工厂模式等)，来解决各类场景问题。
     - 对接支付宝支付，完成从商品库、下单支付、异步发货、掉单补偿等核心流程实现。让用户可以在线购买AI问答额度。
+    - 对接微信公众号
+    - 购买阿里云服务器、申请域名、使用云效创建Devops流水线、部署配置Nginx、Mysql、Redis、Docker Container(可视化管理Docker容器)、
+      Prometheus(服务器数据收集)、Grafana(可视化监控)、Loki(日志收集)
 
-### 2. 服务治理 SpringBoot 中间件
+### 2. 氧惠商城APP
 
-- 系统架构：SpringBoot Starter 组件开发
-- 核心技术：熔断、降级、限流、切量、白名单、人群控制
-- 项目描述：该SpringBoot
+- 项目描述：一站式电商导购、推广平台，包括了APP、H5、小程序、公众号，用户通过氧惠APP购买淘宝、京东等各大主流电商平台商品会获得返利金额，除此之外，
+  APP还包含了特惠话费电费充值、在线点单、本地生活等丰富的返利场景，争取让用户省的更多
+- 项目架构：采用经典MVC模型、微服务设计理念来架构代码，项目分为portal、member、account、message、gateway、eureka、apollo等工程
+- 核心技术：SpringBoot、SpringCloud、Apollo、Mysql、Redis、ElasticSearch、Flink、
   Starter中间件实现了熔断、降级、限流、切量、白名单等服务治理功能，减少了开发工作量和出错风险。利用SpringBoot的自动化配置机制简化了集成和使用，并提供了可扩展接口，以满足不同场景的需求。
+- 项目地址：<a href="http://h5.yanghuimall.com/pages/index/index">http://h5.yanghuimall.com/pages/index/index</a>
 - 核心职责：
     - 鉴于组内同类需求的重复开发，设计并实现服务治理 SpringBoot Starter 中间件，提高开发效率和降低重复开发成本。
       该中间件的核心功能包括服务治理中的熔断、降级、限流、切量和白名单等。
