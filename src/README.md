@@ -15,7 +15,7 @@ actions:
     type: primary
 
   - text: 我的项目 💐
-    link: https://openai.gaga.plus/
+    link: http://openai.yaofengqiao.top
 
 highlights:
   - header: 
@@ -24,10 +24,19 @@ highlights:
     features:
       - title: OpenAI助手 & OpenAI营销平台 
         icon: table-columns
-        details: 24年1月，以DDD领域驱动设计架构，开发完成AI助手、营销平台系统。运用了全面的分布式技术栈。
+        details: 24年1月，以DDD领域驱动设计架构，开发完成AI助手、营销平台系统，为日常开发提效的同时，增加了系统可玩性。
         link: http://openai.yaofengqiao.top
-  
+        
+      - title: 氧惠商城APP
+        icon: table-columns
+        details: 23年8月，采用经典MVC模型、微服务架构设计实现的一站式电商导购、推广平台，包括了APP、H5、小程序、公众号，为用户购物省的更多。
+        link: http://h5.yanghuimall.com/pages/index/index
 
+      - title: 团好单选品推广平台
+        icon: table-columns
+        details: 23年8月，采用经典MVC模型、微服务架构设计实现的一站式电商导购、推广平台，包括了APP、H5、小程序、公众号，为用户购物省的更多。
+        link: http://h5.yanghuimall.com/pages/index/index
+  
 copyright: false
 footer: |-
   <div class="content"><a href="http://beian.miit.gov.cn" target="_blank">京ICP备1903****号</a> | MIT 协议, 版权所有 © 2024 姚凤桥，All rights reserved.</div>
