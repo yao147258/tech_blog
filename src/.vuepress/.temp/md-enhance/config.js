@@ -1,15 +1,15 @@
 import { defineClientConfig } from "@vuepress/client";
-import VPCard from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/VPCard.js";
-import CodeTabs from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeTabs.js";
-import { hasGlobalComponent } from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-shared/lib/client/index.js";
-import { CodeGroup, CodeGroupItem } from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/compact/index.js";
-import { useContainer } from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/composables/container.js";
-import "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/container/index.scss";
-import CodeDemo from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeDemo.js";
-import MdDemo from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/MdDemo.js";
-import "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/figure.scss";
-import Playground from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Playground.js";
-import Tabs from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Tabs.js";
+import VPCard from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/VPCard.js";
+import CodeTabs from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeTabs.js";
+import { hasGlobalComponent } from "E:/code/js/tech-blog/node_modules/vuepress-shared/lib/client/index.js";
+import { CodeGroup, CodeGroupItem } from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/compact/index.js";
+import { useContainer } from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/composables/container.js";
+import "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/container/index.scss";
+import CodeDemo from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/CodeDemo.js";
+import MdDemo from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/MdDemo.js";
+import "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/styles/figure.scss";
+import Playground from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Playground.js";
+import Tabs from "E:/code/js/tech-blog/node_modules/vuepress-plugin-md-enhance/lib/client/components/Tabs.js";
 
 export default defineClientConfig({
   enhance: ({ app }) => {

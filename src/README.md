@@ -32,14 +32,14 @@ highlights:
         details: 23年8月，采用经典MVC模型、微服务架构设计实现的一站式电商导购、推广平台，包括了APP、H5、小程序、公众号，为用户购物省的更多。
         link: http://h5.yanghuimall.com/pages/index/index
 
-      - title: 团好单选品推广平台
+      - title: 团好单
         icon: table-columns
-        details: 23年8月，采用经典MVC模型、微服务架构设计实现的一站式电商导购、推广平台，包括了APP、H5、小程序、公众号，为用户购物省的更多。
-        link: http://h5.yanghuimall.com/pages/index/index
+        details: 23年8月，采用经典MVC模型、微服务架构设计实现的电商选品、推广平台，帮助淘客、商家更好的出单。
+        link: http://thd.yanghuimall.com/baseHome
   
 copyright: false
 footer: |-
-  <div class="content"><a href="http://beian.miit.gov.cn" target="_blank">京ICP备1903****号</a> | MIT 协议, 版权所有 © 2024 姚凤桥，All rights reserved.</div>
+  <div class="content"><a href="http://beian.miit.gov.cn" target="_blank">鄂ICP备2024038815号</a> | MIT 协议, 版权所有 © 2024 姚凤桥，All rights reserved.</div>
 ---
 
 <br/>

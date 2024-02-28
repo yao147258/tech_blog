@@ -1,13 +1,13 @@
 import { defineClientConfig } from "@vuepress/client";
-import { VPLink } from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-shared/lib/client/index.js";
+import { VPLink } from "E:/code/js/tech-blog/node_modules/vuepress-shared/lib/client/index.js";
 
-import { HopeIcon, Layout, NotFound, useScrollPromise, injectDarkmode, setupDarkmode, setupSidebarItems } from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/export.js";
+import { HopeIcon, Layout, NotFound, useScrollPromise, injectDarkmode, setupDarkmode, setupSidebarItems } from "E:/code/js/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/export.js";
 
-import { defineAutoCatalogIconComponent } from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-plugin-auto-catalog/lib/client/index.js"
-import { GlobalEncrypt, LocalEncrypt } from "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/export.js";
-import "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/styles/all.scss"
+import { defineAutoCatalogIconComponent } from "E:/code/js/tech-blog/node_modules/vuepress-plugin-auto-catalog/lib/client/index.js"
+import { GlobalEncrypt, LocalEncrypt } from "E:/code/js/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/export.js";
+import "E:/code/js/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/modules/encrypt/styles/all.scss"
 
-import "C:/Users/姚凤桥/Desktop/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
+import "E:/code/js/tech-blog/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
 
 defineAutoCatalogIconComponent(HopeIcon);
 
